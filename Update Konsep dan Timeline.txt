@@ -1,4 +1,4 @@
-Latar Belakang
+ Latar Belakang
 Di era digital, informasi mengenai seminar, workshop, pelatihan, lomba, hingga acara sosial sering kali tidak sampai ke masyarakat luas secara tepat waktu. Promosi masih terbatas melalui poster, grup WhatsApp, atau media sosial tertentu sehingga tidak semua orang bisa mengakses informasi dengan mudah. Hal ini membuat banyak orang, khususnya anak muda dan komunitas, melewatkan peluang untuk mengembangkan diri dan memperluas jejaring.
 Oleh karena itu, diperlukan sebuah aplikasi mobile sederhana namun efektif yang berfokus pada kemudahan mencari dan menemukan event. Dengan antarmuka yang simpel dan fitur yang relevan, aplikasi ini membantu pengguna menjelajahi event di sekitar mereka, menandai event favorit, serta mengunggah informasi event untuk berbagi dengan komunitas lain.
 Deskripsi Singkat
@@ -36,3 +36,41 @@ Dokumentasi teknis & pengguna, screenshot aplikasi, penyusunan laporan
 16
 Finalisasi laporan, pembuatan slide presentasi, latihan & simulasi demo proyek akhir
 
+
+F. Flow Aplikasi
+Alur penggunaan aplikasi GoEvent dirancang agar sederhana namun efektif dalam membantu pengguna menemukan dan mengelola informasi event. Berikut penjelasan flow tiap fitur utama:
+Halaman Home
+Saat aplikasi dibuka, pengguna langsung diarahkan ke halaman Home.
+Halaman ini menampilkan daftar event terbaru dan terpopuler.
+Pengguna dapat melakukan scroll untuk melihat lebih banyak event.
+Jika pengguna memilih salah satu event, sistem akan menampilkan halaman Detail Event yang berisi deskripsi, lokasi, tanggal, serta penyelenggara.
+
+
+Pencarian Event
+Dari halaman Home, pengguna dapat menggunakan fitur pencarian.
+Pencarian bisa berdasarkan kategori (misalnya seminar, workshop, hiburan) atau lokasi (misalnya kota/kampus tertentu).
+Hasil pencarian langsung ditampilkan dalam bentuk daftar event yang sesuai.
+
+
+Favorit Event
+Pada halaman Detail Event, tersedia tombol “Tambah ke Favorit”.
+Jika ditekan, event akan tersimpan di halaman Favorit.
+Hal ini memudahkan pengguna untuk menyimpan dan mengakses kembali event yang diminati tanpa harus mencari ulang.
+
+
+Upload Event
+Pengguna yang ingin mempublikasikan kegiatan dapat masuk ke menu Upload Event.
+Sistem menampilkan form berisi data seperti judul event, deskripsi, kategori, lokasi, dan tanggal.
+Setelah form diisi dan dikirim, event akan tersimpan di database dan otomatis muncul di halaman Home serta dapat ditemukan oleh pengguna lain.
+
+
+Profil Pengguna
+Pada menu Profil, pengguna dapat melihat informasi akun pribadi seperti nama, email, dan foto profil.
+Di halaman ini juga ditampilkan daftar event yang pernah diunggah pengguna.
+Pengguna dapat melakukan pengaturan dasar pada profil mereka.
+
+G. Rancangan Database
+Struktur database yang dibutuhkan untuk menyimpan data event, pengguna, dan favorit. 
+Tabel User (id_user, nama, email, password, foto_profil).
+Tabel Event (id_event, judul, deskripsi, kategori, lokasi, tanggal, id_user).
+Tabel Favorit (id_favorit, id_user, id_event).
